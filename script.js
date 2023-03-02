@@ -10,30 +10,11 @@ function createSquare() {
   return div;
 }
 
-// function createBlackBlock() {
-//   const div = createSquare();
-//   div.style.backgroundColor = "black";
-//   return div;
-// }
-
-// function createRedBlock() {
-//   const div = createSquare();
-//   div.style.backgroundColor = "red";
-//   return div;
-// }
-
 function createCheckerBoard(size) {
   const board = document.createElement("div");
   for (let i = 0; i < size; i++) {
-    // if (i % 2 === 0) {
-    //   const block = createBlackBlock();
-    //   board.appendChild(block);
-    // } else {
-    //   const block = createRedBlock();
-    //   board.appendChild(block);
-    // }
     board.appendChild(createSquare());
   }
   return board;
 }
-document.body.appendChild(createCheckerBoard(81));
+document.body.appendChild(createCheckerBoard(63));
